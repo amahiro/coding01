@@ -1,0 +1,68 @@
+/******************************************************************
+
+recruit
+
+******************************************************************/
+.recruit {
+	padding: 40px 0 80px;
+	&__inner {
+		padding: 0 20px;
+		width: 100%;
+	}
+	&__message {
+		&--en {
+			margin-bottom: 12px;
+			font-size: 4.8rem;
+		}
+		&--ja {
+			margin-bottom: 19px;
+			font-size: 1.8rem;
+		}
+		&--lead {
+			font-size: 1.5rem;
+		}
+	}
+	&__bg-image {
+		margin-bottom: 35px;
+		height: 290px;
+	}
+	&__contents {
+		padding: 30px 20px;
+	}
+	&__title {
+		margin-bottom: 14px;
+		font-size: 1.6rem;
+	}
+	&__table {
+		margin-bottom: 40px;
+		> tbody {
+			> tr {
+				&:last-child {
+					> th {
+						vertical-align: baseline;
+					}
+					> td {
+						padding: 0 0 20px;
+						> p {
+							margin-bottom: 15px;
+						}
+					}
+				}
+				> th,td {
+					display: block;
+					font-size: 1.4rem;
+					border-bottom: none;
+				}
+				> th {
+					padding: 18px 0 6px;
+					width: auto;
+				}
+				> td {
+					padding-right: 0;
+					padding-bottom: 20px;
+					border-bottom: 1px solid #DDDDDD;
+				}
+			}
+		}
+	}
+}

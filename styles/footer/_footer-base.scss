@@ -1,0 +1,30 @@
+/*-------------------------------
+
+	footer
+
+-------------------------------*/
+.footer {
+	padding: 60px 0;
+	text-align: center;
+	background-color: #120E19;
+	&__inner {
+		> ul {
+			justify-content: center;
+			margin-bottom: 22px;
+			> li {
+				margin: 0 15px;
+				> a {
+					text-transform: uppercase;
+					letter-spacing: 0.06em;
+					font-weight: bold;
+					font-size: 14px;
+					color: #fff;
+				}
+			}
+		}
+		> p {
+			font-size: 1rem;
+			color: #A798B7;
+		}
+	}
+}

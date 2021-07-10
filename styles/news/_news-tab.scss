@@ -1,0 +1,45 @@
+/******************************************************************
+
+news
+
+******************************************************************/
+.news {
+	padding-top: 60px;
+	&__inner {
+		padding: 0 20px;
+	}
+	&__body {
+		flex-direction: column;
+		> h2 {
+			align-self: stretch;
+			margin-right: 0;
+			margin-bottom: 50px;
+		}
+		> ul {
+			width: 100%;
+			> li {
+				margin-bottom: 28px;
+				> a {
+					flex-wrap: wrap;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	&__category {
+		font-size: 1.2rem;
+	}
+	&__text {
+		flex: none;
+		margin-top: 10PX;
+		width: 100%;
+	}
+	&__list {
+		margin-bottom: 40px;
+	}
+	&__pagination {
+		margin-bottom: 80px;
+	}
+}

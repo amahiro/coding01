@@ -1,0 +1,105 @@
+/******************************************************************
+
+contact
+
+******************************************************************/
+.contact {
+	padding: 67px 0 70px;
+	text-align: center;
+	&__inner {
+		margin: 0 auto;
+		width: 77%;
+		max-width: 1140px;
+	}
+	&__message {
+		margin-bottom: 38px;
+		font-size: 1.6rem;
+		color: #333333;
+		> span {
+			display: inline-block;
+		}
+	}
+	&__table {
+		border-collapse: collapse;
+		table-layout: fixed;
+		text-align: left;
+		width: 100%;
+		> tbody {
+			> tr {
+				display: block;
+				&:last-child {
+					> td {
+						margin-bottom: 50px;
+					}
+				}
+				> th {
+					display: block;
+					margin-bottom: 12px;
+					font-weight: initial;
+					font-size: 1.6rem;
+					color: #333333;
+				}
+				> td {
+					display: block;
+					margin-bottom: 30px;
+					> ul {
+						justify-content: flex-start;
+						> li {
+							margin-right: 55px;
+							> input[type=radio] {
+								margin-right: 5px;
+							}
+							> .radio-label {
+								font-size: 1.4rem;							
+							}
+						}
+
+					}
+					> input[type=text],
+					  input[type=email],
+					  input[type=tel],
+					  select {
+						border: 1px solid #AAAAAA;
+						border-radius: 6px;
+						background-color: #fff;
+						width: 300px;
+						height: 40px;
+						font-size: 1.4rem;
+						color: #333333;
+					}
+					> textarea {
+						border: 1px solid #AAAAAA;
+						border-radius: 6px;
+						background-color: #fff;
+						width: 54%;
+						max-width: 600px;
+						height: 257px;
+						font-size: 1.4rem;
+					}
+					> select {
+						padding-left: 29px;
+					}
+					> input[type=tel] {
+						width: 200px;
+					}
+				}
+			}
+		}
+	}
+	&__required {
+		vertical-align: text-top;
+		margin-left: 21px;
+		font-size: 1.2rem;
+		color: #391E88;
+	}
+	&__tel-message {
+		vertical-align: text-top;
+		margin-left: 21px;
+		font-size: 1.2rem;
+		color: #333333;
+	}
+	&__form {
+		background-color: #F7F7F7;
+		padding: 90px;
+	}
+}

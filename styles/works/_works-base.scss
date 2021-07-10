@@ -1,0 +1,39 @@
+/******************************************************************
+
+works
+
+******************************************************************/
+.works {
+	padding: 70px 0 82px;
+	text-align: center;
+	&__inner {
+		margin: 0 auto;
+		width: 77%;
+		max-width: 1140px;
+	}
+	&__list {
+		flex-wrap: wrap;
+		&::after {
+			content: '';
+			display: block;
+			width: 31.5%;
+		}
+	}
+	&__item {
+		margin-bottom: 28px;
+		width: 31.5%;
+	}
+	&__image {
+		margin-bottom: 12px;
+		box-shadow: 0 0 15px rgba(0,0,0,.2);
+		height: auto;
+	}
+	&__title {
+		font-size: 1.6rem;
+		color: #333333;
+		> span {
+			display: inline-block;
+			margin-left: 6px;
+		}
+	}
+}

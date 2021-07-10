@@ -1,0 +1,58 @@
+/******************************************************************
+
+post
+
+******************************************************************/
+.post {
+	padding: 40px 0 78px;
+	&__inner {
+		padding: 0 20px;
+		width: 100%;
+		> time {
+			margin-bottom: 14px;
+		}
+	}
+	&__heading {
+		margin-bottom: 52px;
+		font-size: 2.2rem;
+	}
+	&__category {
+		margin-bottom: 14px;
+		font-size: 1.1rem;
+	}
+	&__lead {
+		margin-bottom: 56px;
+		font-size: 1.4rem;
+	}
+	&__intro {
+		&--heading {
+			padding-left: 17px;
+			margin-bottom: 17px;
+			font-size: 1.8rem;
+		}
+		&--lead {
+			font-size: 1.4rem;
+		}
+	}
+	&__content {
+		&--heading {
+			margin-bottom: 18px;
+			font-size: 1.6rem;
+		}
+		&--text {
+			margin-bottom: 40px;
+			font-size: 1.4rem;
+			&:last-child {
+				margin-bottom:40px;
+			}
+		}
+	}
+	&__pagination {
+		padding: 15px 0;
+		> li {
+			> a {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

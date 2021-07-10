@@ -1,0 +1,24 @@
+/******************************************************************
+
+news
+
+******************************************************************/
+.news {
+	padding-top: 40px;
+	&__body {
+		> h2 {
+			align-self: center;
+			&::after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&__category {
+		font-size: 1.1rem;
+	}
+	&__text {
+		line-height: 1.5;
+		font-size: 1.4rem;
+	}
+}

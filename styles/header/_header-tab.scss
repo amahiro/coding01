@@ -1,0 +1,92 @@
+/*-------------------------------
+
+	header
+
+-------------------------------*/
+.header {
+    &__fixed {
+        > nav {
+            position: fixed !important;
+        }
+        > .hamburger {
+            position: static !important;
+        }
+    }
+	> h1 {
+		top: 25px;
+		left: 20px;
+	}
+	> nav {
+        visibility: hidden;
+        position: fixed;
+		top: 0;
+		left: 0;
+        background-image: linear-gradient(135deg,#642390,#19074A);
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        z-index: -1000;
+        transition: all .3s;
+		> ul {
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+			> li {
+                margin: 20px 0;
+                opacity: 0;
+                transform: translateX(-10px);
+				> a {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+	> .hamburger {
+		display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 9999;
+        > span {
+            display: block;
+            margin-bottom: 7px;
+            background-color: #fff;
+            width: 31px;
+            height: 2px;
+            transition: all .3s;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+	}
+    > .hamburger-open {
+        > span {
+            &:nth-child(1) {
+                transform: translateY(9px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(-9px) rotate(45deg);
+            }
+        }
+        + nav {
+            visibility: visible;
+            opacity: 1;
+            z-index: 1000;
+            > ul {
+                > li {
+                    animation: slidein-left .4s ease-in-out 1 normal forwards;
+					@for $i from 1 through 6 {
+						&:nth-child(#{$i}) {
+							animation-delay: .2s * $i;
+						}
+					}
+                }
+            }
+        }
+    }
+}

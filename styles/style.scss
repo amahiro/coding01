@@ -1,0 +1,42 @@
+@import "common/common-base";
+@import "header/header-base";
+@import "top/top-base";
+@import "footer/footer-base";
+@import "fixed/fixed-base";
+@import "contactcommon/contactcommon-base";
+@import "news/news-base";
+@import "post/post-base";
+@import "service/service-base";
+@import "works/works-base";
+@import "company/company-base";
+@import "recruit/recruit-base";
+@import "contact/contact-base";
+
+@media (max-width: 1025px) {
+  @import "common/common-tab";
+  @import "header/header-tab";
+  @import "top/top-tab";
+  @import "footer/footer-tab";
+  @import "news/news-tab";
+  @import "post/post-tab";
+  @import "service/service-tab";
+  @import "works/works-tab";
+  @import "company/company-tab";
+  @import "recruit/recruit-tab";
+  @import "contact/contact-tab";
+}
+
+@media (max-width: 599px) {
+  @import "common/common-sp";
+  @import "header/header-sp";
+  @import "top/top-sp";
+  @import "footer/footer-sp";
+  @import "contactcommon/contactcommon-sp";
+  @import "news/news-sp";
+  @import "post/post-sp";
+  @import "service/service-sp";
+  @import "works/works-sp";
+  @import "company/company-sp";
+  @import "recruit/recruit-sp";
+  @import "contact/contact-sp";
+}

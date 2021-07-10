@@ -1,0 +1,122 @@
+/******************************************************************
+
+recruit
+
+******************************************************************/
+.recruit {
+	overflow-x: hidden;
+	padding: 116px 0 110px;
+	text-align: center;
+	background-image: url(../../images/bg-geometry.png);
+	background-repeat: repeat;
+	background-size: contain;
+	background-position: center;
+	&__inner {
+		margin: 0 auto;
+		width: 77%;
+		max-width: 1140px;
+	}
+	&__message {
+		text-align: center;
+		margin-bottom: 38px;
+		&--en {
+			margin-bottom: 8px;
+			font-weight: bold;
+			font-size: 7.2rem;
+			color: #391E88;
+		}
+		&--ja {
+			display: block;
+			margin-bottom: 34px;
+			font-size: 3.2rem;
+			color: #391E88;
+		}
+		&--lead {
+			margin-bottom: 6px;
+			font-size: 1.6rem;
+			color: #333333;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__bg-image {
+		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+		margin: 0 calc(50% - 50vw) 63px;
+		background-image: url(../../images/recruit01.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100vw;
+		height: 779px;
+	}
+	&__contents {
+		padding: 58px 95px;
+		margin-bottom: 133px;
+		border: 1px solid #B8AED5;
+		border-radius: 10px;
+		background-color: #FFFFFF;
+	}
+	&__title {
+		display: block;
+		margin-bottom: 15px;
+		font-weight: bold;
+		font-size: 2.4rem;
+		color: #333333;
+	}
+	&__table {
+		border-collapse: collapse;
+		table-layout: fixed;
+		text-align: left;
+		margin-bottom: 50px;
+		> tbody {
+			> tr {
+				&:last-child {
+					> th {
+						vertical-align: text-top;
+					}
+					> td {
+						padding: 30px 0;
+						> p {
+							margin-bottom: 15px;
+						}
+						> ul {
+							list-style: inside;
+							> li {
+								> &:last-child {
+									margin-bottom: 0;
+								}
+								margin-bottom: 6px;
+
+							}
+						}
+					}
+				}
+				> th,td {
+					font-size: 1.5rem;
+					color: #333333;
+					border-bottom: 1px solid #DDDDDD;
+				}
+				> th {
+					padding: 30px 143px 30px 30px;
+					width: 270px;
+					font-weight: initial;
+				}
+			}
+		}
+	}
+	&__btn {
+		margin-bottom: 8px;
+	}
+	&__migration {
+		display: block;
+		font-size: 1.2rem;
+		color: #333333;
+	}
+	&__video {
+		width: 100%;
+		> video {
+			width: 100%;
+		}
+	}
+}

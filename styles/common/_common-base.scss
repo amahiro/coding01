@@ -1,0 +1,160 @@
+/******************************************************************
+
+Stylesheet: top pageのベーススタイル
+
+******************************************************************/
+/*-------------------------------
+
+	base
+
+-------------------------------*/
+html {
+	letter-spacing: 0.05em;
+	font-family: montserrat, 'Noto Sans JP', sans-serif;
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	height: 100%;
+}
+a {
+	text-decoration: none;
+}
+ul,ol {
+	list-style: none;
+}
+img {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 100%;
+	height: auto;
+}
+h2 {
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 3.6rem;
+	color: #391E88;
+	&::after {
+		content: attr(data-heading);
+		position: absolute;
+		bottom: -25px;
+		left: 50%;
+		white-space: nowrap;
+		transform: translateX(-50%);
+		font-size: 1.4rem;
+		color: #391E88;
+	}
+}
+.sm-heading {
+	margin-bottom: 19px;
+	font-weight: bold;
+	font-size: 3.2rem;
+	color: #391E88;
+}
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 21px 76px;
+	border-radius: 100vh;
+	background: linear-gradient(to right,#7633A4,#250D65);
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #fff;
+	transition: all .3s;
+	&:hover {
+		color: rgba(255,255,255,.6);
+	}
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadein-bottom {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes slidein-left {
+	from {
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+/******************************************************************
+
+下層ページのbase
+
+******************************************************************/
+.kv {
+	position: relative;
+	background-image: url(../../images/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 190px;
+	> h2 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #fff;
+		&::after {
+			content: attr(data-heading);
+			color: #fff;
+		}
+	}
+}
+.breadcrumb {
+	align-items: baseline;
+	justify-content: flex-start;
+	padding: 15px 20px 15px 11%;
+	background-color: #F7F7F7;
+	> li {
+		display: inline-block;
+		white-space: nowrap;
+		&::after {
+			content: '>';
+			display: inline-block;
+			color: #333333;
+		}
+		&:last-child {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			> a {
+				color: #333333;
+			}
+			&::after {
+				content: none;
+			}
+		}
+		> a {
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			color: #391E88;
+		}
+	}
+}

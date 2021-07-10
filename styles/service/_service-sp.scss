@@ -1,0 +1,29 @@
+/******************************************************************
+
+service
+
+******************************************************************/
+.service {
+	padding: 40px 0 80px;
+	text-align: center;
+	&__image {
+		margin-right: 0;
+		margin-bottom: 18px;
+		width: 100%;
+	}
+	&__item {
+		flex-direction: column;
+		margin-bottom: 69px;
+	}
+	&__text {
+		align-self: center;
+		width: 100%;
+		> h3 {
+			margin-bottom: 15px;
+			font-size: 1.8rem;
+		}
+		> p {
+			line-height: 1.7;
+		}
+	}
+}
